@@ -1,0 +1,46 @@
+%Written by Manh Ha Nguyen - 3.Sep.21
+%Test result for randworddriver.m
+%-------------------------------------%
+
+FUNCTIONALITY OF RANDWORD FUNCTION
+1.Generate random word
+- Yes
+
+For reference check command window result below
+%--------------------------%
+TEST RUN 1
+vids
+later
+sentence
+specifications
+housewives
+avatar
+demo
+betting
+referred
+siemens
+
+TEST RUN 2
+equality
+streets
+zoo
+sample
+feelings
+legislative
+helicopter
+radius
+america
+union
+
+TEST RUN 3
+existing
+attractions
+yang
+today
+data
+buildings
+constant
+transcripts
+sexo
+advisors
+

@@ -1,0 +1,32 @@
+%Written by Manh Ha Nguyen - 3.Sep.21
+%Test result for wordcheckmoduledriver.m
+%----------------------------%
+
+FUNTIONALITY OF CODE
+1. Print out if user guess is correct or incorrect  (1)
+- Yes
+
+2. Give out value if it is wrong or correct         (2)
+- Yes
+
+3. Print out line of "=" to imply newt turn below   (3)
+- Yes
+
+For reference check command window result below
+%-----------------------------%
+word = 'abcdefg';
+
+TEST RUN 1
+please enter a letter i
+Wrong guess my friend.                      %TEST FOR FUNCTION(1)
+===========================================================  %TEST FOR FUNCTION(3)
+iscorrect = 0                               %TEST FOR FUNCTION(2)
+iswrong = 1
+
+
+TEST RUN 2
+please enter a letter a
+That is correct.                            %TEST FOR FUNCTION(1)
+===========================================================  %TEST FOR FUNCTION(3)
+iscorrect = 1                               %TEST FOR FUNCTION(2)
+iswrong = 0

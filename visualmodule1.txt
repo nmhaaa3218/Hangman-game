@@ -1,0 +1,23 @@
+%Written by Manh Ha Nguyen - 3.Sep.21
+%Test result for visualmodule1driver.m
+%---------------------------------%
+
+FUNTIONALITY OF PROGRAM
+1. Display turn               (1)
+- Yes
+
+2. Display wordguess array    (2)
+- Yes
+
+For reference check command window below
+%------------------------%
+
+TEST RUN 1
+>> visualmodule1driver
+TURN 7                     TEST FOR FUNCTION (1)
+a _ c d e _ f g            TEST FOR FUNCTION (2) 
+
+TEST RUN 2
+>> visualmodule1driver
+TURN 1                     TEST FOR FUNCTION (1)
+_ _ c _ e _ f g            TEST FOR FUNCTION (2)

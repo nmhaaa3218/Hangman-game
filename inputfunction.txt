@@ -1,0 +1,70 @@
+%Written by Manh Ha Nguyen - 3.Sep.21
+%Test result for inputfunctiondriver.m
+%--------------------------------------%
+
+PROGRAM FUNCTIONALITY
+
+1.Append user guesses to guessalready variable (1)
+- Yes
+
+2.Check for longer than 1 character            (2)
+- Yes
+
+3.Check letter for already guessed one         (3)
+- Yes
+
+4.Check for number                             (4)
+- Yes
+
+5.Display already guessed letter after turn 1  (5)
+- Yes
+
+6.Lower user input in case of capital letter   (6)
+- Yes
+
+For reference check command window result below
+%-----------------------------------------------%
+>> inputfunctiondriver
+%TEST FOR FUNCTION (1)
+Please take a guess: a
+You have already guessed: a    %TEST FOR FUNCTION (5)              
+Please take a guess: b
+You have already guessed: a b 
+Please take a guess: c
+You have already guessed: a b c 
+
+%TEST FOR FUNCTION (2)
+Please take a guess: ab
+Please only entered a single letter that have not been guessed: a1
+Please only entered a single letter that have not been guessed: b1
+Please only entered a single letter that have not been guessed: 1b
+
+%TEST FOR FUNCTION (3)
+Please only entered a single letter that have not been guessed: a
+Please only entered a single letter that have not been guessed: b
+Please only entered a single letter that have not been guessed: c
+
+%TEST FOR FUNCTION (4)
+Please only entered a single letter that have not been guessed: 1
+Please only entered a single letter that have not been guessed: 2
+Please only entered a single letter that have not been guessed: 14
+
+%TEST FOR FUNCTION (6)
+Please only entered a single letter that have not been guessed: D
+You have already guessed: a b c d 
+Please take a guess: E
+You have already guessed: a b c d e 
+Please take a guess: F
+You have already guessed: a b c d e f 
+Please take a guess: h
+You have already guessed: a b c d e f h 
+Please take a guess: I
+You have already guessed: a b c d e f h i 
+Please take a guess: j
+You have already guessed: a b c d e f h i j 
+Please take a guess: K
+
+%FINAL RESULT FOR FUNCTION (1)
+Guess already vector isabcdefhijk
+
+

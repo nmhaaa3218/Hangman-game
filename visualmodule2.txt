@@ -1,0 +1,36 @@
+%Written by Manh Ha Nguyen - 3.Sep.21
+%Test for visualmodule2driver.m
+%---------------------------------%
+
+FUNCTIONALITY OF PROGRAM
+1. Display hangman figure
+- Yes
+
+For reference check command window result below
+%------------------------------------%
+wrongguess = 1
+ ___________ 
+||         | 
+||           
+||            
+||           
+||           
+||           
+ 
+wrongguess = 5
+ ___________ 
+||         | 
+||         O 
+||        ~|~ 
+||           
+||           
+||           
+
+wrongguess = 7
+ ___________ 
+||         | 
+||         O 
+||        ~|~ 
+||         | 
+||         ^ 
+||  

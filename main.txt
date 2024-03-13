@@ -1,0 +1,193 @@
+%Written by Manh Ha Nguyen 3.Sep.21
+%TEST FOR THE WHOLE PROGRAM
+%HANGMAN GAME
+%----------------------------%
+
+MAIN FUNCTIONALITY OF PROGRAM                          
+1. Display turn - FUNCTION (1)
+- Yes
+
+2.Display dashes line for user to guess - FUNCTION (2)
+- Yes
+
+3.Display hangman figure according to number of wrong guess - FUNCTION (3)
+- Yes
+
+4.Check if the user input is correct/correct and display message - FUNCTION (4)
+- Yes
+
+5.Display already guessed letter - FUNCTION (5)
+- Yes
+
+6.Ensure validity of user input (not already guessed, is a single letter) - FUNCTION (6)
+- Yes
+
+7.Display message if the user win/lose - FUNCTION (7)
+- Yes
+
+8.Display line of "=" to imply new turn below - FUNCTION (8)
+- Yes
+
+For reference check command window result below
+%-----------------------------------------------%
+TEST RUN 
+>> main
+TURN 1                            %FUNCTION (1)
+__ __ __ __ __ __ __              %FUNCTION (2)
+ ___________                      
+||                                %FUNCTION (3)
+||           
+||            
+||           
+||           
+||           
+Please take a guess: U             
+Wrong guess my friend.            %FUNCTION (4)
+===========================================================     %FUNCTION (8)
+TURN 2                            %FUNCTION (1)
+__ __ __ __ __ __ __              %FUNCTION (2)
+ ___________ 
+||         |                      %FUNCTION (3)
+||           
+||            
+||           
+||           
+||           
+You have already guessed: u       %FUNCTION (5)
+Please take a guess: e
+Wrong guess my friend.            %FUNCTION (4)         
+===========================================================     %FUNCTION (8)
+TURN 3                            %FUNCTION (1)
+__ __ __ __ __ __ __              %FUNCTION (2)
+ ___________ 
+||         |                      %FUNCTION (3)
+||         O 
+||           
+||           
+||           
+||           
+You have already guessed: u e     %FUNCTION (5)
+Please take a guess: a
+That is correct.                  %FUNCTION (4)
+===========================================================     %FUNCTION (8)
+TURN 4                            %FUNCTION (1)
+__ a __ __ __ a __                %FUNCTION (2)
+ ___________ 
+||         |                      %FUNCTION (3) 
+||         O 
+||           
+||           
+||           
+||           
+You have already guessed: u e a   %FUNCTION (5) 
+Please take a guess: o
+Wrong guess my friend.            %FUNCTION (4) 
+===========================================================     %FUNCTION (8)
+TURN 5                            %FUNCTION (1)
+__ a __ __ __ a __                %FUNCTION (2) 
+ ___________ 
+||         | 
+||         O 
+||         |  
+||           
+||           
+||           
+You have already guessed: u e a o %FUNCTION (5)
+Please take a guess: i
+That is correct.                  %FUNCTION (4) 
+===========================================================     %FUNCTION (8)
+TURN 6                            %FUNCTION (1)
+__ a __ __ i a __                 %FUNCTION (2)
+ ___________ 
+||         |                      %FUNCTION (3) 
+||         O 
+||         |  
+||           
+||           
+||           
+You have already guessed: u e a o i   %FUNCTION (5)
+Please take a guess: N
+Wrong guess my friend.            %FUNCTION (4) 
+===========================================================     %FUNCTION (8)
+TURN 7                            %FUNCTION (1)
+__ a __ __ i a __                 %FUNCTION (2)
+ ___________ 
+||         |                      %FUNCTION (3) 
+||         O 
+||        ~|  
+||           
+||           
+||           
+You have already guessed: u e a o i n   %FUNCTION (5)
+Please take a guess: T
+That is correct.                  %FUNCTION (4) 
+===========================================================     %FUNCTION (8)
+TURN 8                            %FUNCTION (1)
+__ a __ t i a __                  %FUNCTION (2)
+ ___________ 
+||         | 
+||         O 
+||        ~|  
+||           
+||           
+||           
+You have already guessed: u e a o i n t  %FUNCTION (5)
+Please take a guess: V
+Wrong guess my friend.            %FUNCTION (4) 
+===========================================================     %FUNCTION (8)
+TURN 9                            %FUNCTION (1)
+__ a __ t i a __                  %FUNCTION (2)
+ ___________ 
+||         |                      %FUNCTION (3) 
+||         O 
+||        ~|~ 
+||           
+||           
+||           
+You have already guessed: u e a o i n t v   %FUNCTION (5)
+Please take a guess: v
+Please only entered a single letter that have not been guessed: p        %FUNCTION (6)
+Wrong guess my friend.            %FUNCTION (4) 
+===========================================================     %FUNCTION (8)
+TURN 10                            %FUNCTION (1)
+__ a __ t i a __                   %FUNCTION (2)
+ ___________ 
+||         |                       %FUNCTION (3) 
+||         O 
+||        ~|~ 
+||         | 
+||           
+||           
+You have already guessed: u e a o i n t v p   %FUNCTION (5)
+Please take a guess: m
+That is correct.                  %FUNCTION (4) 
+===========================================================     %FUNCTION (8)
+TURN 11                            %FUNCTION (1)
+m a __ t i a __                    %FUNCTION (2)
+ ___________ 
+||         |                       %FUNCTION (3)
+||         O 
+||        ~|~ 
+||         | 
+||           
+||           
+You have already guessed: u e a o i n t v p m   %FUNCTION (5)
+Please take a guess: r
+That is correct.                 %FUNCTION (4) 
+===========================================================     %FUNCTION (8)
+TURN 12                            %FUNCTION (1)
+m a r t i a __                     %FUNCTION (2)
+ ___________ 
+||         |                       %FUNCTION (3)
+||         O 
+||        ~|~ 
+||         | 
+||           
+||           
+You have already guessed: u e a o i n t v p m r   %FUNCTION (5)
+Please take a guess: l
+That is correct.                 %FUNCTION (4) 
+===========================================================     %FUNCTION (8)
+The word is martial
+You win mate!!! 
+You are awesome.        %FUNCTION (7)
